@@ -14,7 +14,7 @@ export class HomePage {
 
   constructor(private httpCielnt: HttpClient) {
 
-    this.usuarios = this.httpCielnt.get('https://randomuser.me/api/?results=20').pipe(map(res => res['results']))
+    this.usuarios = this.httpCielnt.get('https://raw.githubusercontent.com/DiegoJSan/Actividad_1.11/master/MOCK_DATA.json?token=ASPGUK3DLVRHL66T2DYLFSLBQFAZ6').pipe(map(res => res['results']))
 
 
   }
