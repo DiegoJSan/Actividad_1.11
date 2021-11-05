@@ -13,7 +13,7 @@ export class HomePage {
 
   constructor(private httpClient: HttpClient) {
 
-    this.usuarios = this.httpClient.get('https://raw.githubusercontent.com/DiegoJSan/https---github.com-DiegoJSan-Actividad_1.11/master/MOCK_DATA%20.json')
+    this.usuarios = this.httpClient.get('https://raw.githubusercontent.com/DiegoJSan/Actividad_1.11/master/MOCK_DATA%20.json?token=ASPGUKYND62UWCD6N3MJ3DTBQUJC4')
 
 
   }
