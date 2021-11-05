@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
-import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +11,9 @@ export class HomePage {
 
   usuarios: any;
 
-  constructor(private httpCielnt: HttpClient) {
+  constructor(private httpClient: HttpClient) {
 
-    this.usuarios = this.httpCielnt.get('https://raw.githubusercontent.com/DiegoJSan/Actividad_1.11/master/MOCK_DATA.json?token=ASPGUK3DLVRHL66T2DYLFSLBQFAZ6').pipe(map(res => res['results']))
+    this.usuarios = this.httpClient.get('https://raw.githubusercontent.com/DiegoJSan/https---github.com-DiegoJSan-Actividad_1.11/master/MOCK_DATA%20.json')
 
 
   }

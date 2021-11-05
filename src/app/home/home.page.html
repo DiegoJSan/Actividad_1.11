@@ -14,13 +14,13 @@
         <ion-card>
           <ion-card-content>
             <ion-avatar>
-              <img [src]= "usuario.picture.medium">
+              <img [src]= "usuario.avatar">
             </ion-avatar>
-            <h1 class="tipo1">{{usuario.name.first}} {{usuario.name.last}}</h1>
+            <h1 class="tipo1">{{usuario.first_name}} {{usuario.last_name}}</h1>
             <p class="tipo3">Texto de relleno de la descripción de cada persona</p>
-            <p class="tipo2"><b>Edad de registro: </b>{{usuario.registered.age}}</p>
+            <p class="tipo2"><b>Género: </b>{{usuario.gender}}</p>
             <p class="tipo2"><b>Email: </b>{{usuario.email}}</p>
-            <p class="tipo2"><b>Usuario: </b>{{usuario.login.username}}</p>
+            <p class="tipo2"><b>Direccion IP: </b>{{usuario.ip_address}}</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
